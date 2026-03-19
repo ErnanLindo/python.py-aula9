@@ -1,0 +1,12 @@
+# Passo 1: Solicita ao usuário quanto dinheiro ele tem na carteira (em Reais)
+reais = float(input("Quanto dinheiro você tem na carteira? R$ "))
+
+# Passo 2: Define a taxa de câmbio informada
+cotacao_dolar = 5.25
+
+# Passo 3: Calcula quantos dólares podem ser comprados
+# A fórmula é: total_em_reais / preco_do_dolar
+dolares = reais / cotacao_dolar
+
+# Passo 4: Exibe o resultado formatado com 2 casas decimais
+print(f"Com R$ {reais:.2f}, você pode comprar US$ {dolares:.2f}") 
